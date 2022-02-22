@@ -4,7 +4,7 @@ import "fmt"
 
 type nome []string // Posso utilizar para tipar as variáveis
 
-func main() {
+func index() {
 	var nome nome // define o tipo da variável nome
 
 	nome = append(nome, "Teste 1")
