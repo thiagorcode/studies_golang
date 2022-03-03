@@ -2,10 +2,11 @@ package main
 
 import "fmt"
 
+// Posso utilizar para defini um objeto
 type Pessoa struct {
 	Nome  string
 	Idade int
-} // Posso utilizar para defini um objeto
+}
 
 func main() {
 	pessoa := Pessoa{

@@ -1,4 +1,4 @@
-module github.com/thiagorcode/studies_golang
+module helloworld
 
 go 1.17
 
