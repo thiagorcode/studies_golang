@@ -1,16 +1,22 @@
 package main
 
-import "github.com/thiagorcode/studies_golang/Part-2/model"
+import (
+	uuid "github.com/satori/go.uuid"
+	"github.com/thiagorcode/studies_golang/Part-2/model"
+)
 
 func main() {
-	produto1 := model.NewProduct()
-	produto1.Name = "Carrinho"
-
-	produto2 := model.NewProduct()
-	produto2.Name = "Boneca"
+	produto1 := model.Product{
+		ID:   uuid.NewV4().String(),
+		Name: "Carrinho",
+	}
+	produto2 := model.Product{
+		ID:   uuid.NewV4().String(),
+		Name: "Carrinho",
+	}
 
 	products := model.Products{}
-	products.Add(*produto1)
-	products.Add(*produto2)
+	products.Add(produto1)
+	products.Add(produto2)
 
 }
